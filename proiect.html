@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HCI Challenge #2
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            Introduction
+        </h1>
+
+        	<p>
+        		AICO is an application designed to offer solutions for airsoft players looking to enhance their experience and link up easier with people to play with. The application has 3 main components: 
+        		<ul>
+				  <li>Organizing and finding games through the mobile application</li>
+				  <li>Enhancing the experience on the field with AR technology</li>
+				  <li>Referee interface for spectating the game to ensure a fair match</li>
+				</ul>
+
+				The interaction with the application is analyzed on 4 personas: The gamer, the athlete, the referee and the concerned parent.
+        	</p>
+
+        <h1>
+            Interaction types
+        </h1>
+
+	        <p>
+	        	Interaction types define the way the user sends and receives information to and from the application.
+	        	The designed application includes a variety of interaction types and offers a fair chance to people who couldn't enjoy airsoft before due to certain disabilities.
+
+	        	<ul>
+	        		<li>
+	        			Traditional: The referee is using a web interface to see real time footage from the field.
+	        		</li>
+	        		<li>
+	        			Touchscreen: The players are using the touchscreen interface of the mobile application in order to organize and find games.
+	        		</li>
+	        		<li>
+	        			Hand gestures: Players can use gestures to communicate different types of predefined callouts. The gestures are detected by the smartwatch and can be used for example for pings visible on the augmented field.
+	        		</li>
+	        		<li>
+	        			AR: The AR glasses provide the player a wide range of additional information such as the position of their teammates, objectives, spotted enemies, pings, gun ammo, zone restrictions and much more.
+	        		</li>
+	        		<li>
+	        			Voice: The players can communicate with eachother using the microphone in their smartwatch.
+	        		</li>
+	        	</ul>
+
+	        	There are several helping features for people with disabilities. Deaf people can better visualize their surroundings and also receive help in the form of augmented visual markers that indicate where certain sounds are coming from. Mute people can communicate using the gesture system.
+
+	        </p>
+
+        <h1>
+            Design Patterns
+        </h1>
+
+        <p>
+        	Design patterns provide standardized solutions to frequently encountered problems. The most significant design patterns present in our application would be:
+
+
+        	<ul>
+        		<li>
+        			Alternate rows: Improves readability of a table by sligthly changing the color tone of adjacent rows.
+
+    				Examples:
+
+    				<figure>
+    					<img src="design patterns/alternate_rows.jpg">
+    					<figcaption>
+    						Player scoreboard
+    					</figcaption>
+    				</figure>
+
+    				<figure>
+    				    <img src="design patterns/expand_collapse_1.jpg">
+    				    <figcaption>
+    						Filters for finding matches
+    					</figcaption>
+    				</figure>
+
+        		</li>
+
+        		<li>
+        			Alternate views: Useful for allowing the same data to be viewed differently by users with different preferences.
+
+        			Examples:
+
+    				<figure>
+    				    <img src="design patterns/alternate_views.jpg">
+    				    <figcaption>
+    						Different cameras layout options
+    					</figcaption>
+    				</figure>
+
+        		</li>
+
+        		<li>
+        			
+        			Date picker: Provies an intuitive way for the user to input a date without any confusion related to the format of the date.
+
+        			Example:
+
+    				<figure>
+    				    <img src="design patterns/date_picker.jpg">
+    				    <figcaption>
+    						Calendar
+    					</figcaption>
+    				</figure>
+
+
+        		</li>
+
+        		<li>
+        			Time picker: Similar to date picker but for choosing an hour.
+
+        			Example:
+
+					<figure>
+    				    <img src="design patterns/time_picker.jpg">
+    				    <figcaption>
+    						Clock
+    					</figcaption>
+    				</figure>
+        		</li>
+
+        		<li>
+        			Expand/Collapse: It is recomended when certain information is not required to be visible at all times but should be easily reachable.
+
+
+        			Example:
+
+					<figure>
+				    <img src="design patterns/expand_collapse3.png">
+				    <figcaption>
+						Players panel and filters panel
+					</figcaption>
+
+    				</figure>
+
+    				<figure>
+				    <img src="design patterns/expand_collapse2.png">
+				    <figcaption>
+						Expands the game browse filters
+					</figcaption>
+
+    				</figure>
+        		</li>
+
+        		<li>
+	        		Secure input: This pattern ensures that sensitive information is not visible unless the user decides to reveal it.
+
+					Example:
+
+					<figure>
+				    <img src="design patterns/hide.jpg">
+				    <figcaption>
+						Hidden card info
+					</figcaption>
+
+    				</figure>
+
+    				<figure>
+				    <img src="design patterns/hide2.jpg">
+				    <figcaption>
+						Hidden password
+					</figcaption>
+
+    				</figure>
+
+
+        		</li>
+
+        		<li>
+        			Infinite scrolling: Continously provides a stream of content to the user (as long as there is enough content)
+
+        			Example:
+
+        			<figure>
+				    <img src="design patterns/infinite scrolling.jpg">
+				    <figcaption>
+						Available matches
+					</figcaption>
+
+    				</figure>
+
+        		</li>
+
+        		<li>
+        			Notifications: Provides a synthesis of the important events at the moment they occur as well as getting feedback from the interactions.
+
+        			Example:
+
+        			<figure>
+				    <img src="design patterns/notifications.jpg">
+				    <figcaption>
+						Notifications
+					</figcaption>
+
+    				</figure>
+
+        		</li>
+
+        	</ul>
+        </p>
+
+
+        <h1>
+            Story boards
+        </h1>
+
+	        <h2>
+	        	Airsoft player experience
+	        </h2>
+
+	        <figure>
+				    <img src="other images/storyboard1.jpg" width=50%>
+				    <figcaption>
+						Player storyboard
+					</figcaption>
+
+    		</figure>
+
+    		<p>
+    			The main actor of the storyboard is Denis. He is using the AICO app to organize an airsoft match with his preffered rules. Other players join his game and meet with Denis at the decided location where they have a fun airsoft experience. They use the provided equipment including a smartwatch, a bluetooth connected weapon and some AR glasses. At the end of the game they can check their scores and stats during the match.
+    		</p>
+
+
+    		<h2>
+	        	Referee experience
+	        </h2>
+
+	        <figure>
+				    <img src="other images/storyboard2.jpg" width=50%>
+				    <figcaption>
+						Referee storyboard
+					</figcaption>
+
+    		</figure>
+
+    		<p>
+    			The main actor of the storyboard is Mihai. He decides to make some money by refereeing some airsoft matches as he is also passionate about this sport himself. He picks a game and on the selected date welcomes the players on the field. After making sure that everyone is present and understood the explained rules he monitors the players using the cameras integrated in the glasses to make sure everyone is playing fairly.
+    		</p>
+
+        <h1>
+        	User flows and Sitemaps    
+        </h1>
+
+	        <figure>
+			    <img src="other images/web flow.png">
+			    <figcaption>
+					Referee flow on web
+				</figcaption>
+
+    		</figure>
+
+			<figure>
+			    <img src="other images/web sitemap.png">
+			    <figcaption>
+					Web sitemap
+				</figcaption>
+
+    		</figure>
+
+
+	        <figure>
+			    <img src="other images/mobile flow.png">
+			    <figcaption>
+					Player flow on mobile
+				</figcaption>
+
+    		</figure>
+
+			<figure>
+			    <img src="other images/mobile sitemap.png">
+			    <figcaption>
+					Mobile sitemap
+				</figcaption>
+
+    		</figure>
+
+        <h1>
+        	 Sketches and Prototypes
+        </h1>
+
+		<h2>
+			Login Form Sketch
+		</h2>
+
+		<figure>
+				<img src="other images/login.jpg" width=50%>
+				<figcaption>
+					Login Page
+				</figcaption>
+
+		</figure>
+
+		<p>
+			The Login page features fields for entering the e-mail and password of the user, whilst hiding the password initially to protect the user's data. There is a checkbox to remember the account on this device
+			and a link to the register page in case the user does not have an account. They can also connect via popular social media platforms like facebook, google or twitter.
+		</p>
+
+		<h2>
+			Register Page Sketch
+		</h2>
+
+		<figure>
+				<img src="other images/register.jpg" width=50%>
+				<figcaption>
+					Register Page
+				</figcaption>
+
+		</figure>
+
+		<p>
+			The Register page features fields for entering the e-mail and password of the user, whilst hiding the password initially to protect the user's data. There is a checkbox to subscribe to the newsletter
+			and a link to the login page in case the user already has an account. 
+		</p>
+
+		<h2>
+			Forgotten Password Page Sketch
+		</h2>
+
+		<figure>
+				<img src="other images/recover_pass.jpg" width=50%>
+				<figcaption>
+					Recover Password Page
+				</figcaption>
+
+		</figure>
+
+		<p>
+			The Recover Password page has two fields that serve as ways to recover the user's lost password. They can do so via e-mail or phone sms. There are also links to the register page and the login page.
+		</p>
+
+		<h2>
+			Account Page Sketch
+		</h2>
+
+		<figure>
+				<img src="other images/account.jpg" width=50%>
+				<figcaption>
+					Account Page
+				</figcaption>
+
+		</figure>
+
+		<p>
+			The Account Page stores all sort of information regarding the user's account, such as his personal information, payment methods and friends. On the top left the user's profile picture, name and 
+			number of games played are displayed, with a possibility to change the picture by clicking on it. In the personal information tab the user can see and change their e-mail or name associated with 
+			their account. The payment section allows them to see and edit card information. The frieds tab on the right incentivises the user to get a small community around them with whom to participate
+			in airsoft matches.
+		</p>
+
+		<h2>
+			Payment Page Sketch
+		</h2>
+
+		<figure>
+				<img src="other images/pay.jpg" width=50%>
+				<figcaption>
+					Payment Page
+				</figcaption>
+
+		</figure>
+
+		<p>
+			The payment screen is developed for the mobile application only as organizing airsoft matches is done via the mobile application exclusively. It contains a recap of the information regarding the match,
+			a section for choosing the payment method and the "pay" button. payment can be done either with a card, or in cash at location, the latter having added tax to incentivise users to pay online.
+		</p>
+
+		<h2>
+			Game Browser Page Sketch
+		</h2>
+
+		<figure>
+				<img src="other images/game_browser.jpg" width=50%>
+				<figcaption>
+					Match Browser Page
+				</figcaption>
+
+		</figure>
+
+		<p>
+			In the game browser page the referee can view listed games and their details, like the name of the host, player count, date and time, location and game mode. Once they find a suitable match and decide
+			to referee for it they can press the corresponding button and lock it the position. They are then expected to show up at the match.
+		</p>
+
+		<h2>
+			Referee Browse Games Page Prototype
+		</h2>
+
+		<figure>
+				<img src="other images/referee_browse_proto.png" width=50%>
+				<figcaption>
+					Referee Browse Games Page
+				</figcaption>
+
+		</figure>
+
+		<h2>
+			Cameras Page Sketch
+		</h2>
+
+		<figure>
+				<img src="other images/cameras.jpg" width=50%>
+				<figcaption>
+					Camera Page
+				</figcaption>
+
+		</figure>
+
+		<p>
+			In the cameras page the referee can watch the live feed of players in the arena. The camera layout can be adjusted using the menu on the right. There is a home button on the bottom, as well as 
+			an announcement button to make an announcement and a kick player button for dealing with people that do not follow the rules. In the left menu there are filters and sorting fields for finding certain
+			players, as well as a list of players.
+		</p>
+
+		<h2>
+			Cameras Page Prototype
+		</h2>
+
+		<figure>
+				<img src="other images/camera_proto.png" width=50%>
+				<figcaption>
+					Camera Page
+				</figcaption>
+
+		</figure>
+
+		<h2>
+			Referee Overview Page Prototype
+		</h2>
+
+		<figure>
+				<img src="other images/Referee Overview.png" width=50%>
+				<figcaption>
+					Referee Overview Page
+				</figcaption>
+
+		</figure>
+
+		<p>
+			In this page the referee can see the name of the game, the current score, the time allocated for the match, the teams and the player's scores. They can also click the spectate button to be taked to the 
+			cameras page, or start the game when everyone is ready.
+		</p>
+
+		<h2>
+			Mobile Dashboard Prototype
+		</h2>
+
+		<figure>
+				<img src="other images/main_menu_proto.png" width=50%>
+				<figcaption>
+					Mobile App
+				</figcaption>
+
+		</figure>
+
+		<p>
+			The Dashboard features an account button, a notifications section, a way to browse and organize games and a match history.
+		</p>
+
+		<h2>
+			Browse Games Prototype 
+		</h2>
+
+		<figure>
+				<img src="other images/browse_proto.png" width=50%>
+				<figcaption>
+					Browse Games Prototype
+				</figcaption>
+
+		</figure>
+
+		<p>
+			In this page the mobile user can see details of a match and ask for permission to join from the owner of the match. There are also filters in place for finding preffered games.
+		</p>
+
+		<h2>
+			Organize Match Prototype
+		</h2>
+
+		<figure>
+				<img src="other images/organize_proto.png" width=50%>
+				<figcaption>
+					Organize Match
+				</figcaption>
+
+		</figure>
+
+		<p>
+			In this page the user can create a new match to be listed onto the server and give all sorts of details regarding it, like date, hour, gamemode, location, length and player count. After the settings
+			are decided upon the user is taked to the payment page.
+		</p>
+
+		<h2>
+			Your Games Prototype
+		</h2>
+
+		<figure>
+				<img src="other images/your_games_proto.png" width=50%>
+				<figcaption>
+					Your Games
+				</figcaption>
+
+		</figure>
+
+		<p>
+			In this page the user can see his current organized matched and see when they will start and who will attend.
+		</p>
+
+		<h2>
+			History Prototype
+		</h2>
+
+		<figure>
+				<img src="other images/history_proto.png" width=50%>
+				<figcaption>
+					Match History
+				</figcaption>
+
+		</figure>
+
+		<p>
+			In the match history part of the application the user can view their past matches and their results, as well as see their performance statistics during each match.
+		</p>
+
+		<h2>
+			Notifications Prototype
+		</h2>
+
+		<figure>
+				<img src="other images/notify_proto.png" width=50%>
+				<figcaption>
+					Notifications
+				</figcaption>
+
+		</figure>
+
+		<p>
+			In this screen the user is notified of game invitations, refereee announcements and any other messages that require his attention.
+		</p>
+
+		<h2>
+			Settings Prototype
+		</h2>
+
+		<figure>
+				<img src="other images/settings_proto.png" width=50%>
+				<figcaption>
+					Settings
+				</figcaption>
+
+		</figure>
+
+		<p>
+			In this screen the user can change the language of the application and their password and logout of their account. 
+		</p>
+
+		<h2>
+			AR Prototype
+		</h2>
+
+		<figure>
+				<img src="other images/ar_proto.png" width=50%>
+				<figcaption>
+					AR
+				</figcaption>
+
+		</figure>
+
+		<p>
+			Footage of the augmented reality view of the player.
+		</p>
+
+		<h1>
+			Documentation
+		</h1>
+
+		<ul>
+			<li><a href="https://profs.info.uaic.ro/~busaco/teach/courses/hci/hci-film.html"> Course Lectures Page /n</a></li>
+			<li><a href="https://profs.info.uaic.ro/~busaco/teach/courses/hci/presentations/hci04-VisualDesign-InformationArchitecture-DesignPatterns.pdf"> Course 5 </a></li>
+			<li><a href="http://pxdotpt.com/hci"> Laboratory Page </a></li>
+			<li><a href="http://pxdotpt.com/hci/2023/week-5-storyboards-user-flows-sitemaps-sketching"> Week 5 </a></li>
+		</ul>
+		<h1>
+			Contributions
+		</h1>
+
+		<ul>
+			<li>Fechita Antonio - paper sketches, referee game overview and camera page, storyboards, 2 personas</li>
+			<li>Bercovici Adrian - Unity Prototype for AR and mobile application, presentation video</li>
+			<li>Panoschi Cristian - paper sketches, referee game overview and camera page, userflows and sitemaps, 2 personas</li>
+		</ul>
+    </body>
+</html>
